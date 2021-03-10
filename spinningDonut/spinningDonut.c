@@ -1,8 +1,5 @@
 //To run the donut, run the command: gcc spinningDonut.c -lm && ./a.out
-
-#include <stdio.h>
-#include <string.h>
-#include <math.h>
+#include "spinningDonut.h"
 
 int k;
 double sin() ,cos();
@@ -11,6 +8,7 @@ main(){
     char b[1760];
     printf("\x1b[2J");
     while(1) {
+        // fill our arrays with values
         memset(b,32,1760);
         memset(z,0,7040);
         // We spin around one axis, 6.28 = 2pi, the lower the steps the slower the animation
